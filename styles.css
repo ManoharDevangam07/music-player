@@ -1,0 +1,137 @@
+/* Dark Mode Styles */
+body[data-theme="dark"] .all-songs,
+body[data-theme="dark"] .song-card,
+body[data-theme="dark"] .playlist-section {
+    background-color: #444;
+    color: #ddd;
+    border: 2px solid #555;
+}
+
+body[data-theme="dark"] ul li {
+    border-bottom: 1px solid #555;
+}
+
+body[data-theme="dark"] ul li:hover {
+    background-color: #555;
+}
+
+body[data-theme="dark"] button {
+    background-color: #555;
+    color: #ddd;
+}
+
+body[data-theme="dark"] button:hover {
+    background-color: #666;
+}
+
+/* Light Mode Styles */
+body[data-theme="light"] .all-songs,
+body[data-theme="light"] .song-card,
+body[data-theme="light"] .playlist-section {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #2294f2;
+}
+
+body[data-theme="light"] ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+body[data-theme="light"] ul li:hover {
+    background-color: #f0f0f0;
+}
+
+body[data-theme="light"] button {
+    background-color: #2294f2;
+    color: white;
+}
+
+body[data-theme="light"] button:hover {
+    background-color: #1e81d3;
+}
+
+/* Base Theme Styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.all-songs, .song-card, .playlist-section {
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.all-songs:hover, .song-card:hover, .playlist-section:hover {
+    transform: translateY(-5px);
+}
+
+.all-songs h2, .song-card h2, .playlist-section h2 {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li.playing {
+    background-color: #2294f2;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #2294f2;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #1e81d3;
+    outline: none;
+}
